@@ -13,7 +13,7 @@ import {
 
 import Index from './components/ui/Index';
 import Quotes from './components/ui/Quotes';
-
+import Episodes from './components/ui/Episodes';
 
 
 
@@ -70,7 +70,7 @@ const App = ()=> {
               <Index />
             </Route>
             <Route path="/episodes" exact>
-              {/* <Episodes /> */}
+              <Episodes />
             </Route>
             <Route path="/characters" >
               
