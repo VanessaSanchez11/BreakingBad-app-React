@@ -34,7 +34,7 @@ const App = ()=> {
       setItems(result.data)
       setIsLoading(false)
     }
-
+    console.log(fetchItems());
     fetchItems()
     
   }, [query])

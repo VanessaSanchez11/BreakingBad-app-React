@@ -137,11 +137,11 @@ input[type='text'] {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 30px;
-  
+
 }
 
 .card {
-  cursor: pointer;
+  cursor:pointer;
   background-color: transparent;
   height: 300px;
   perspective: 1000px;
@@ -159,6 +159,8 @@ input[type='text'] {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  /* object-fit: initial; */
+
 }
 
 .card-inner {
@@ -329,3 +331,76 @@ span {
   
   
 }
+
+
+/* -------------------MOBILE---------------- */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .btn-group{
+    font-size:17px;
+    margin: 15px auto;
+    width: 100%;
+  }
+  .img-background{
+    width: 100%;
+    height: 54vh;
+  }
+  .cards-episodes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  
+  .message{
+    text-align: center;
+  }
+
+  .form-control{
+    margin: 10px 0; 
+  }
+  .search {
+    height: 125px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) {
+  .cards-episodes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+
+  .episodes-container{
+    width: 45%;
+    padding: 20px;
+    display:flex;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 925px) {
+  .cards-episodes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+
+  .episodes-container{
+    width: 30%;
+    padding: 20px;
+    display:flex;
+    
+  }
+  
+}
+

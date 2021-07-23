@@ -8,7 +8,7 @@ const CharacterGrid = ({items, isLoading}) => {
     return isLoading ? (
     <Spinner />
     ) : (
-     <section className="cards">
+     <section  id="cards-id" className="cards"  data-testid="item-data">
         {items.map((item) => (
             <CharacterItem key={item.char_id} item={item}></CharacterItem>
         ))}

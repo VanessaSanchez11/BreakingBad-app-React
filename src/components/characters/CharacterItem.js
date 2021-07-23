@@ -5,7 +5,7 @@ const CharacterItem = ({item}) => {
         <div className='card'>
           <div className='card-inner'>
             <div className='card-front'>
-              <img src={item.img} alt='' />
+              <img src={item.img} alt='character-images' data-testid="item-img" />
             </div>
             <div className='card-back'>
             

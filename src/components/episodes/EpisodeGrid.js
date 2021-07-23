@@ -7,7 +7,11 @@ const EpisodeGrid = ({episodes,isLoading}) => {
     return isLoading ? (
         <Spinner />
         ) : (
-         <section className="cards-episodes">
+         <section 
+            className="cards-episodes"
+            id="cards-episodes"
+            data-testid="episode-data"
+         >
             {episodes.map((episode) => (
                 <EpisodeItem key={episode.episode_id} episode={episode}></EpisodeItem>
             ))}

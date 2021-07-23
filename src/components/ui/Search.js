@@ -14,7 +14,8 @@ const Search = ({getQuery}) => {
         <section className='search'>
             <h1 className='center message'>Look for your favorite character!!</h1>
             <form>
-                <input type='text' className='form-control'
+                <input htmlFor="searchInput"
+                 type='text' className='form-control'
                  placeholder='Search characters'
                  value={text}
                  onChange={(e) => onChange(e.target.value)}
